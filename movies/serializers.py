@@ -2,7 +2,6 @@ from rest_framework import serializers
 from .models import Actor, Director, Genero, Clasificacion, Peliculas, Reparto
 
 class ActorSerializer(serializers.ModelSerializer):
-    reparto_actor = RepartoSerializer(many=true)
     class Meta:
         model = Actor
         fields = '__all__'

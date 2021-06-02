@@ -4,7 +4,6 @@ from . import serializers
 from rest_framework.permissions import IsAuthenticated
 
 class ActorViewset(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated]
     queryset = models.Actor.objects.all()
     serializer_class = serializers.ActorSerializer
 
